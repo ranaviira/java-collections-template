@@ -12,10 +12,6 @@ import java.util.Properties;
 
 public class FileReaderService implements IFileReaderService {
 
-    /**
-     * Метод позволяет считать в одну строку данные из файла из области ресурсов
-     * @param fileName имя файла
-     */
     @Override
     public String readFromFileToString(String fileName) throws URISyntaxException, IOException {
         Objects.requireNonNull(fileName, "Не указано имя файла");
